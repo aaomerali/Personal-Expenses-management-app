@@ -1,0 +1,68 @@
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+
+            <div class="balance">
+                <div class="totalBalance">
+                    <h3>TOTAL BALANCE</h3>
+                    <h1>$000.00</h1>
+                </div>
+                <div class="income">
+                    <h3 class="title">TOTAL INCOME</h3>
+                    <h1 id="totIncome" class="amount">+$000.00</h1>
+                </div>
+                <div class="expense">
+                    <h3 class="title">TOTAL EXPENSE</h3>
+                    <h1 id="totExpense" class="amount">-$000.00</h1>
+                </div>
+            </div>
+
+            <div class="addTransaction">
+
+                
+                <form class="form">
+
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="expense">EXPENSE</option>
+                        <option value="income">INCOME</option>
+                      </select>
+
+                    <label for="fname">Name</label>
+                    <input type="text" id="name" name="fname" >
+                
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" >
+                
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" >
+                  
+                    <button type="submit" class="submit-btn"> SUBMIT </button>
+                  </form>
+
+            </div>
+
+            <div class="transactions">
+
+                <h1 class="sub-titles">Transactions:</h1>         
+
+            </div>
+            
+        </div>
+
+        
+    
+    
+    <script src="script22.js">     </script>
+        
+    </body>
+
+</html>
